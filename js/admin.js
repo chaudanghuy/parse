@@ -35,12 +35,13 @@ $(function() {
 	});
  	var blog = new Blogs(); 	
 
- 	$('.form-submit').on('submit', function(e){
- 		alert('test');
+ 	$('.form-submit').on('submit', function(e){ 		
  		e.preventDefault();
 
  		blog.set("title", $('.blog-title').text());
  		blog.set("content", $('.blog-content').text());
+
+ 		alert($('.blog-title').text());
 
  		blog.save(null, {
 		  success: function(blog) {
