@@ -35,14 +35,14 @@ $(function() {
 	});
  	var blog = new Blogs(); 	
 
- 	$('.form-submit').on('submit', function(e){ 	
- 		alert($('.parse-title').text());	
+ 	$('.form-submit').on('submit', function(e){ 
+ 		var title = $('.parse-title').val();
+ 		var content = $('.parse-content').val();
+ 		alert(title);	
  		e.preventDefault();
 
- 		blog.set("title", $('.parse-title').val());
- 		blog.set("content", $('.parse-content').val());
-
- 		alert($('.parse-title').val());
+ 		blog.set("title", title);
+ 		blog.set("content", content); 		
 
  		blog.save(null, {
 		  success: function(blog) {
