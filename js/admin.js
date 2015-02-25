@@ -39,8 +39,8 @@ $(function() {
  		alert('test');
  		e.preventDefault();
 
- 		blog.set("title", $('.blog-title').val());
- 		blog.set("content", $('.blog-content').val());
+ 		blog.set("title", $('.blog-title').text());
+ 		blog.set("content", $('.blog-content').text());
 
  		blog.save(null, {
 		  success: function(blog) {
