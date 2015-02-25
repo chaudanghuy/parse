@@ -35,7 +35,8 @@ $(function() {
 	});
  	var blog = new Blogs(); 	
 
- 	$('.form-submit').on('submit', function(e){ 		
+ 	$('.form-submit').on('submit', function(e){ 	
+ 		alert($('.parse-title').val());	
  		e.preventDefault();
 
  		blog.set("title", $('.parse-title').val());
