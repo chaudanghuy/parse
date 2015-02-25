@@ -36,7 +36,7 @@ $(function() {
  	var blog = new Blogs(); 	
 
  	$('.form-submit').on('submit', function(e){ 	
- 		alert($('.parse-title').val());	
+ 		alert($('.parse-title').text());	
  		e.preventDefault();
 
  		blog.set("title", $('.parse-title').val());
