@@ -38,10 +38,10 @@ $(function() {
  	$('.form-submit').on('submit', function(e){ 		
  		e.preventDefault();
 
- 		blog.set("title", $('.blog-title').text());
- 		blog.set("content", $('.blog-content').text());
+ 		blog.set("title", $('.parse-title').val());
+ 		blog.set("content", $('.parse-content').val());
 
- 		alert($('.blog-title').text());
+ 		alert($('.parse-title').val());
 
  		blog.save(null, {
 		  success: function(blog) {
