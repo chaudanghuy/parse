@@ -33,7 +33,7 @@ $(function() {
  	var Blogs = Parse.Collection.extend({
 		model: Blog
 	});
- 	var blog = new Blogs();
+ 	var blog = new Blogs(); 	
 
  	$('.form-submit').on('submit', function(e){
  		alert('test');
